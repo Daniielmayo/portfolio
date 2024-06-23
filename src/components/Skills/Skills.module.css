@@ -1,0 +1,26 @@
+.skills__container {
+  width: 100%;
+  margin-top: 6rem;
+  margin-bottom: 3.5rem;
+}
+
+.skills__title {
+  font-size: var(--fontSize-superTitles_mobile);
+  font-weight: bold;
+  color: var(--color-green);
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.skill__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.skills__name {
+  text-align: center;
+  font-size: var(--fontSize-paragraph_mobile);
+}

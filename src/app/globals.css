@@ -6,6 +6,47 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  /* Typography */
+  --primaryFont: "Montserrat", sans-serif;
+  /* Font size */
+  /* mobile */
+  --fontSize-buttons_mobile: 1rem;
+  --fontSize-superTitles_mobile: 1.8rem;
+  --fontSize-titles_mobile: 1.5rem;
+  --fontSize-subtitles_mobile: 1.125rem;
+  --fontSize-paragraph_mobile: 1rem;
+  /* tablet */
+  --fontSize-buttons_tablet: 1rem;
+  --fontSize-superTitles_tablet: 2rem;
+  --fontSize-titles_tablet: 1.75rem;
+  --fontSize-subtitles_tablet: 1.65rem;
+  --fontSize-paragraph_tablet: 1rem;
+  /* laptop */
+  --fontSize-buttons_laptop: 1.125rem;
+  --fontSize-superTitles_laptop: 3rem;
+  --fontSize-titles_laptop: 2rem;
+  --fontSize-subtitles_laptop: 1.75rem;
+  --fontSize-trasitionLabel_laptop: 1.35rem;
+  --fontSize-paragraph_laptop: 1.25rem;
+  /* desktop */
+  --fontSize-buttons_desktop: 1.25rem;
+  --fontSize-superTitles_desktop: 3.5rem;
+  --fontSize-titles_desktop: 2.5rem;
+  --fontSize-subtitles_desktop: 2rem;
+  --fontSize-paragraph_desktop: 1.375rem;
+  --color-primary: #232732;
+  --color-primaryDark: #282e3a;
+  --color-green: #4caf50;
+  --color-red: #9c0d38;
+  --color-orange: #f4693b;
+  --color-grayTransparent: #eeeeee;
+  --color-grayDark: #78818b;
+  --color-white: #ffff;
+  --color-yellow: #bc9e38;
+  --border: solid 0.02rem;
+  --borderRadius: 0.8rem;
+  --transition: 500ms;
+  --transform: scale(1.05);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,12 +59,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: var(--color-primary);
 }
 
 @layer utilities {

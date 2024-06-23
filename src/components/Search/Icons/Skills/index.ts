@@ -1,0 +1,11 @@
+export { default as IconLogoCss3 } from './CssIcon';
+export { default as IconExpress } from './ExpressIcon';
+export { default as IconGit } from './GitBashIcon';
+export { default as IconGithub } from './GitHubIcon';
+export { default as IconJavascript } from './JavaScriptIcon';
+export { default as IconJest } from './JestIcon';
+export { default as IconMongodb } from './MongDb';
+export { default as IconNextjs } from './NextjsIcon';
+export { default as IconNodeJs } from './NodejsIcon';
+export { default as IconReact } from './ReactIcon';
+export { default as IconTailwind } from './TailwindIcon';

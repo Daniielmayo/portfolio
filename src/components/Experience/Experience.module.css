@@ -1,0 +1,16 @@
+/* w-[100%] flex flex-col justify-center items-center gap-5 */
+.experience__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 8rem;
+}
+
+.experience__title {
+  font-size: var(--fontSize-superTitles_mobile);
+  color: var(--color-green);
+  font-weight: bold;
+}

@@ -1,0 +1,73 @@
+.home__container {
+  width: 100%;
+  height: calc(100% - 4.063rem);
+  margin: 2rem 0rem 2rem 0rem;
+}
+
+.home__content-image {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__image--portfolio {
+  width: 15.625rem;
+  height: 15.625rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.home__title--portfolio {
+  text-align: center;
+  min-width: 16rem;
+  max-width: 25rem;
+  padding: 1rem;
+  font-size: var(--fontSize-superTitles_mobile);
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.home__title--portfolio > b {
+  color: var(--color-green);
+}
+
+.home__content--paragraph {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__paragraph-portfolio {
+  font-size: var(--fontSize-paragraph_mobile);
+  color: var(--color-grayTransparent);
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+.home__content--icons {
+  width: 90%;
+  display: flex;
+  gap: 1.3rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.home__whatsaap--icon {
+  width: 2.5rem;
+  color: var(--color-grayDark);
+}
+
+.home__cv--button {
+  background-color: var(--color-green);
+}
+
+.home__icon--button {
+  width: 1.2rem;
+  font-weight: bold;
+}
