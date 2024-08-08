@@ -9,7 +9,7 @@ import {
   Button,
   Chip,
 } from "@nextui-org/react";
-
+import styles from "./CardProject.module.css";
 interface Props {
   image?: string;
   title?: string;
@@ -79,14 +79,15 @@ export const CardProject: React.FC<Props> = ({
       </div>
       <div className="flex mb-[2rem] pb-0 pt-1 px-4 gap-4">
         <Button
-          className="bg-[var(--color-green)]"
+          // className="bg-[var(--color-green)]"
+          className={styles["button_demo"]}
           variant="light"
           href={linkDemo}
         >
           Link Proyecto
         </Button>
         <Button
-          className="border-[var(--color-green)]"
+          className={styles['button_repo']}
           variant="bordered"
           href={linkGitHub}
         >

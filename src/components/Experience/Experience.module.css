@@ -6,11 +6,36 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin-top: 8rem;
+  margin-top: 5rem;
 }
 
 .experience__title {
   font-size: var(--fontSize-superTitles_mobile);
   color: var(--color-green);
   font-weight: bold;
+}
+.experience__contentCards {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+@media (width >= 48rem) {
+  .experience__contentCards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 1.3rem;
+  }
+}
+
+@media (width >= 64rem) {
+  .experience__contentCards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.1rem;
+  }
 }

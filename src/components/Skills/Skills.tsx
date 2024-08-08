@@ -36,17 +36,36 @@ export const Skills = () => {
   ];
 
   return (
-    <section className={styles['skills__container']}>
-      <h1 className={styles['skills__title']}>Skills</h1>
+    <section id="skills" className={styles["skills__container"]}>
+      <h1 className={styles["skills__title"]}>Skills</h1>
       <Swiper
         centeredSlides={true}
         autoplay={{
-          delay: 1000,
+          delay: 1000, // Tiempo de espera entre cada slide
           disableOnInteraction: false,
+          // speed: 500, // Velocidad de la transición (en milisegundos)
         }}
-        slidesPerView={4}
         loop={true}
+        speed={1000} // Ajusta la velocidad de la transición entre slides
         modules={[Autoplay, Navigation]}
+        breakpoints={{
+          320: {
+            slidesPerView: 4,
+          },
+          // Cuando la ventana es >= 768px
+          768: {
+            slidesPerView: 6,
+          },
+          // Cuando la ventana es >= 1024px
+          1024: {
+            slidesPerView: 8,
+          },
+          // Cuando la ventana es >= 1440px
+          1440: {
+            slidesPerView: 10,
+          },
+        }}
+        className={styles["skills__content--Icons"]}
       >
         {icons.map(({ icon, text }, index) => (
           <SwiperSlide key={index}>

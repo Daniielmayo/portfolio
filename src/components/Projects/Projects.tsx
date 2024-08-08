@@ -24,17 +24,14 @@ export const Projects = () => {
   return (
     <section className={styles["Projec__content"]}>
       <h1 className={styles["project__title"]}>Proyectos</h1>
-      <div className="flex flex-wrap gap-4 pb-0 pt-2 px-4">
-        
+      <div className="flex flex-wrap justify-center gap-4 pb-0 pt-2 px-4">
         <Button
           onClick={() => handleTabChange("todos")}
           data-value="todos"
           variant={selectedTab === "todos" ? "solid" : "light"}
-          className={
-            selectedTab === "todos"
-              ? "bg-[var(--color-orange)]"
-              : "bg-transparent"
-          }
+          className={`${styles.button} ${
+            selectedTab === "todos" ? styles["button-selected"] : ""
+          }`}
         >
           Todos
         </Button>
@@ -44,21 +41,19 @@ export const Projects = () => {
             onClick={() => handleTabChange(tech)}
             data-value={tech}
             variant={selectedTab === tech ? "solid" : "light"}
-            className={
-              selectedTab === tech
-                ? "bg-[var(--color-orange)]"
-                : "bg-transparent"
-            }
+            className={`${styles.button} ${
+              selectedTab === tech ? styles["button-selected"] : ""
+            }`}
           >
             {tech.charAt(0).toUpperCase() + tech.slice(1)}
           </Button>
         ))}
       </div>
-      {filteredProjects.map((data, index) => (
-        <div key={index}>
-          <CardProject {...data} />
-        </div>
-      ))}
+      <div className={styles["projects__cards"]}>
+        {filteredProjects.map((data, index) => (
+          <CardProject {...data} key={index} />
+        ))}
+      </div>
     </section>
   );
 };

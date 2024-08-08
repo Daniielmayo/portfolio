@@ -20,6 +20,7 @@ const config: Config = {
               DEFAULT: "#4caf50",
             },
             secondary: "#ffff",
+            danger:"#f4693b"
           },
           layout: {
             

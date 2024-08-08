@@ -48,6 +48,7 @@
   color: var(--color-grayTransparent);
   width: 90%;
   margin-bottom: 2rem;
+  /* text-align: center; */
 }
 
 .home__content--icons {
@@ -56,18 +57,68 @@
   gap: 1.3rem;
   margin-top: 1rem;
   margin-bottom: 3rem;
+  justify-content: center;
 }
 
 .home__whatsaap--icon {
   width: 2.5rem;
   color: var(--color-grayDark);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.home__whatsaap--icon:hover {
+  color: var(--color-green);
+  transform: var(--transform);
 }
 
 .home__cv--button {
   background-color: var(--color-green);
+  transition: var(--transition);
+}
+
+.home__cv--button:hover {
+  transform: var(--transform);
 }
 
 .home__icon--button {
   width: 1.2rem;
   font-weight: bold;
+}
+
+.home__content--paragraph {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__container__text {
+  /* width: 70%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (width >= 48rem) {
+  .home__content--paragraph {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home__container__text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home__paragraph-portfolio {
+    text-align: center;
+  }
 }

@@ -13,3 +13,41 @@
   font-size: var(--fontSize-superTitles_mobile);
   font-weight: bold;
 }
+
+.projects__cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  transition: var(--transition);
+}
+
+.button:hover {
+  transform: var(--transform);
+}
+.button-selected {
+  background-color: var(
+    --color-orange
+  ); /* Color de fondo para el botón seleccionado */
+  transform: scale(1.1); /* Transformación cuando está seleccionado */
+}
+@media (width >= 48rem) {
+  .projects__cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 1.3rem;
+    align-items: stretch;
+  }
+}
+
+@media (width >= 64rem) {
+  .projects__cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.1rem;
+  }
+}

@@ -1,0 +1,12 @@
+/* Navbar.module.css */
+.navbarLink {
+  color: #ffffff; /* Color por defecto */
+  font-weight: normal;
+  text-decoration: none; /* Asegúrate de que no haya subrayado */
+}
+
+.navbarLink.active {
+  /* color: var(--color-primary); Cambia esto a tu color activo */
+  color: var(--color-orange);
+  font-weight: bold;
+}

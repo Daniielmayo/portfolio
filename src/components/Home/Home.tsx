@@ -6,6 +6,7 @@ import IconWhatsappLine from "../Search/Icons/Home/WhatsAapIcon";
 import IconLinkedin from "../Search/Icons/Home/LinkedIndIcon";
 import { ButtonComponent } from "../Search/Button/Button";
 import IconIconDownload from "../Search/Icons/Home/Download";
+import Link from "next/link";
 
 export const Home = () => {
   return (
@@ -21,23 +22,44 @@ export const Home = () => {
         </h1>
       </div>
       <div className={styles["home__content--paragraph"]}>
-        <p className={styles["home__paragraph-portfolio"]}>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
-          corrupti laudantium exercitationem sint molestiae nisi! Repellendus
-          minus, dolores laboriosam placeat soluta officia illo voluptas
-          doloremque architecto, obcaecati voluptatum cumque eum?
-        </p>
-        <div className={styles["home__content--icons"]}>
-          <IconWhatsappLine className={styles["home__whatsaap--icon"]} />
-          <IconLinkedin className={styles["home__whatsaap--icon"]} />
-          <ButtonComponent
-            className={styles["home__cv--button"]}
-            icon={<IconIconDownload className={styles["home__icon--button"]} />}
-            iconPosition="right"
-            onClick={() => console.log("Button clicked")}
-          >
-            Descargar CV
-          </ButtonComponent>
+        <div className={styles["home__container__text"]}>
+          <p className={styles["home__paragraph-portfolio"]}>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            corrupti laudantium exercitationem sint molestiae nisi! Repellendus
+            minus, dolores laboriosam placeat soluta officia illo voluptas
+            doloremque architecto, obcaecati voluptatum cumque eum?
+          </p>
+          <div className={styles["home__content--icons"]}>
+            <Link
+              href="https://api.whatsapp.com/send/?phone=573192476627" // Reemplaza XXXXXXXXXXXX con tu número de WhatsApp en formato internacional
+              target="_blank" // Esto abrirá el enlace en una nueva pestaña
+              rel="noopener noreferrer" // Buenas prácticas para seguridad y rendimiento
+            >
+              <IconWhatsappLine className={styles["home__whatsaap--icon"]} />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/cdanielvmayo/" // Reemplaza XXXXXXXXXXXX con tu número de WhatsApp en formato internacional
+              target="_blank" // Esto abrirá el enlace en una nueva pestaña
+              rel="noopener noreferrer"
+            >
+              <IconLinkedin className={styles["home__whatsaap--icon"]} />
+            </Link>
+            <a
+              href="https://drive.google.com/file/d/1N3Kr84JlSMRLhIZA3XAJFgA9JkSnv4er/view?usp=sharing" // Reemplaza con la ruta correcta a tu archivo
+              download="Daniel_Mayo_CV.pdf" // Opcional: cambia el nombre del archivo descargado
+              target="_blank"
+            >
+              <ButtonComponent
+                className={styles["home__cv--button"]}
+                icon={
+                  <IconIconDownload className={styles["home__icon--button"]} />
+                }
+                iconPosition="right"
+              >
+                Descargar CV
+              </ButtonComponent>
+            </a>
+          </div>
         </div>
       </div>
     </section>

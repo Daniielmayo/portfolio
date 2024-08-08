@@ -1,0 +1,12 @@
+.button_demo {
+  background-color: var(--color-green);
+  transition: var(--transition);
+}
+
+.button_repo {
+  border: solid 2px var(--color-green);
+}
+.button_demo:hover,
+.button_repo:hover {
+  transform: var(--transform);
+}

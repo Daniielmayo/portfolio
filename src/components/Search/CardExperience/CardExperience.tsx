@@ -7,6 +7,7 @@ import {
   Link,
   Image,
 } from "@nextui-org/react";
+import IconWorkAlt from "@/components/WorkIcon";
 
 interface Props {
   image?: string;
@@ -26,16 +27,17 @@ export const CardExperience: React.FC<Props> = ({
   return (
     <Card className="min-w-[200px] max-w-[400px] bg-[var(--color-primaryDark)]">
       <CardHeader className="flex gap-3">
-        <Image
-          alt="nextui logo"
-          height={40}
-          radius="sm"
-          src={
-            image ||
-            "https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-          }
-          width={40}
-        />
+        {image ? (
+          <Image
+            alt="nextui logo"
+            height={40}
+            radius="sm"
+            src={image} // Aquí pasa solo la URL de la imagen
+            width={40}
+          />
+        ) : (
+          <IconWorkAlt height={40} width={40} /> // Renderiza el ícono si no hay imagen
+        )}
         <div className="flex flex-col">
           <p className="text-md">{name}</p>
           <p className="text-small text-[var(--color-orange)] font-bold">
