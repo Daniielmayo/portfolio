@@ -7,7 +7,7 @@ import {
   Link,
   Image,
 } from "@nextui-org/react";
-import IconWorkAlt from "@/components/WorkIcon";
+import IconWorkAlt from "@/components/Icons/WorkIcon";
 
 interface Props {
   image?: string;

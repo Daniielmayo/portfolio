@@ -2,8 +2,8 @@
 import Image from "next/image";
 import ImageProfile from "../../../public/Home/IMG-20230131-WA0037.jpg";
 import styles from "./Home.module.css";
-import IconWhatsappLine from "../Search/Icons/Home/WhatsAapIcon";
-import IconLinkedin from "../Search/Icons/Home/LinkedIndIcon";
+import IconWhatsappLine from "../Icons/WhatsAapIcon";
+import IconLinkedin from "../Icons/LinkedIndIcon";
 import { ButtonComponent } from "../Search/Button/Button";
 import IconIconDownload from "../Search/Icons/Home/Download";
 import Link from "next/link";
@@ -24,10 +24,13 @@ export const Home = () => {
       <div className={styles["home__content--paragraph"]}>
         <div className={styles["home__container__text"]}>
           <p className={styles["home__paragraph-portfolio"]}>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            corrupti laudantium exercitationem sint molestiae nisi! Repellendus
-            minus, dolores laboriosam placeat soluta officia illo voluptas
-            doloremque architecto, obcaecati voluptatum cumque eum?
+            Soy desarrollador Full Stack con casi 2 años de experiencia en el
+            diseño, desarrollo e implementación de aplicaciones web escalables y
+            de alto rendimiento.
+            <br />
+            He trabajado en proyectos creados desde cero como aplicaciones
+            multimedia para clases online tambien en plataformas de eCommerce
+            con paneles administrativos.
           </p>
           <div className={styles["home__content--icons"]}>
             <Link

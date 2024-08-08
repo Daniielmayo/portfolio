@@ -88,7 +88,7 @@ export const Contact = () => {
           type="text"
           label="Nombre"
           variant={"underlined"}
-          className="w-[300px] md:w-[400px]"
+          className="w-[300px] md:w-[400px] text-[22px]"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
@@ -96,14 +96,14 @@ export const Contact = () => {
           type="text"
           label="Email"
           variant={"underlined"}
-          className="w-[300px] md:w-[400px]"
+          className="w-[300px] md:w-[400px] "
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <Textarea
           label="Descripcion"
           placeholder="Enter your description"
-          className="w-[300px] md:w-[400px]"
+          className="w-[300px] md:w-[400px] text-[22px]"
           variant="underlined"
           value={description}
           onChange={(e) => setDescription(e.target.value)}

@@ -1,6 +1,7 @@
 import { Experience, Home, NavbarTop, Projects, Skills } from "@/components";
 import styles from "./page.module.css";
 import { Contact } from "@/components/Contact/Contact";
+import { Footer } from "@/components/Footer/Footer";
 export default function HomePage() {
   return (
     <main>
@@ -22,6 +23,7 @@ export default function HomePage() {
           <section id="contacto">
             <Contact />
           </section>
+          <Footer />
         </div>
       </div>
     </main>
