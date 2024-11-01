@@ -39,8 +39,9 @@ export const CardProject: React.FC<Props> = ({
     <Card className="min-w-[200px] max-w-[400px] bg-[var(--color-primaryDark)]">
       <CardBody className="overflow-visible ">
         <Image
+          isZoomed
           alt={title}
-          className="object-cover rounded-xl w-[100%]"
+          className="object-cover rounded-xl w-[100%] cursor-pointer"
           src={image}
         />
       </CardBody>
@@ -79,7 +80,6 @@ export const CardProject: React.FC<Props> = ({
       </div>
       <div className="flex mb-[2rem] pb-0 pt-1 px-4 gap-4">
         <Button
-          // className="bg-[var(--color-green)]"
           className={styles["button_demo"]}
           variant="light"
           href={linkDemo}
@@ -87,7 +87,7 @@ export const CardProject: React.FC<Props> = ({
           Link Proyecto
         </Button>
         <Button
-          className={styles['button_repo']}
+          className={styles["button_repo"]}
           variant="bordered"
           href={linkGitHub}
         >
