@@ -79,20 +79,18 @@ export const CardProject: React.FC<Props> = ({
         ))}
       </div>
       <div className="flex mb-[2rem] pb-0 pt-1 px-4 gap-4">
-        <Button
-          className={styles["button_demo"]}
-          variant="light"
-          href={linkDemo}
-        >
-          Link Proyecto
-        </Button>
-        <Button
-          className={styles["button_repo"]}
-          variant="bordered"
-          href={linkGitHub}
-        >
-          Link GitHub
-        </Button>
+        <a href={linkDemo} target="_blank" rel="noopener noreferrer">
+          <Button className={styles["button_demo"]} variant="light">
+            Demo Proyecto
+          </Button>
+        </a>
+        {linkGitHub ? (
+          <a href={linkGitHub} target="_blank" rel="noopener noreferrer">
+            <Button className={styles["button_repo"]} variant="bordered">
+              Repositorio
+            </Button>
+          </a>
+        ) : null}
       </div>
     </Card>
   );

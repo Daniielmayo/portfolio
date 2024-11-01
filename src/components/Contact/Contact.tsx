@@ -101,8 +101,8 @@ export const Contact = () => {
           onChange={(e) => setEmail(e.target.value)}
         />
         <Textarea
-          label="Descripcion"
-          placeholder="Enter your description"
+          label="Descripción"
+          placeholder=" "
           className="w-[300px] md:w-[400px] text-[22px]"
           variant="underlined"
           value={description}

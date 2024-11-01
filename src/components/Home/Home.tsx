@@ -29,7 +29,7 @@ export const Home = () => {
             de alto rendimiento.
             <br />
             He trabajado en proyectos creados desde cero como aplicaciones
-            multimedia para clases online tambien en plataformas de eCommerce
+            multimedia para clases online, también en plataformas de e-commerce
             con paneles administrativos.
           </p>
           <div className={styles["home__content--icons"]}>
