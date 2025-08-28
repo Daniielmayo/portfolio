@@ -1,8 +1,9 @@
 import React from "react";
-import { IconLinkedin, IconWhatsappLine } from "../Search";
+
 import styles from "./Footer.module.css";
 import IconGithub from "../Icons/GitHubIcon";
 import Link from "next/link";
+import { IconLinkedin, IconWhatsappLine } from "../Search";
 
 export const Footer = () => {
   return (

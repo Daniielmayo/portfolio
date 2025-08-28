@@ -86,7 +86,7 @@ export default function NavbarTop() {
                 activeId === item.id ? styles.active : ""
               }`}
               href={`#${item.id}`}
-              onClick={(e) => {
+              onClick={(e: React.ChangeEvent<HTMLInputElement>) => {
                 e.preventDefault();
                 scrollToSection(item.id);
                 // Prevent activeId update for Skills click
@@ -111,7 +111,7 @@ export default function NavbarTop() {
               }`}
               href={`#${item.id}`}
               size="lg"
-              onClick={(e) => {
+              onClick={(e: React.ChangeEvent<HTMLInputElement>) => {
                 e.preventDefault();
                 scrollToSection(item.id);
               }}

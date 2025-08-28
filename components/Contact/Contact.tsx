@@ -90,7 +90,9 @@ export const Contact = () => {
           variant={"underlined"}
           className="w-[300px] md:w-[400px] text-[22px]"
           value={name}
-          onChange={(e) => setName(e.target.value)}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+            setName(e.target.value)
+          }
         />
         <Input
           type="text"
@@ -98,7 +100,9 @@ export const Contact = () => {
           variant={"underlined"}
           className="w-[300px] md:w-[400px] "
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+            setEmail(e.target.value)
+          }
         />
         <Textarea
           label="Descripción"
@@ -106,7 +110,9 @@ export const Contact = () => {
           className="w-[300px] md:w-[400px] text-[22px]"
           variant="underlined"
           value={description}
-          onChange={(e) => setDescription(e.target.value)}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+            setDescription(e.target.value)
+          }
         />
         {isSubmitting ? (
           <Button className={styles["button_submit"]} isLoading>

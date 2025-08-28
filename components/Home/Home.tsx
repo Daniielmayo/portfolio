@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import ImageProfile from "../../../public/Home/IMG-20230131-WA0037.jpg";
 import styles from "./Home.module.css";
 import IconWhatsappLine from "../Icons/WhatsAapIcon";
 import IconLinkedin from "../Icons/LinkedIndIcon";
@@ -13,9 +12,11 @@ export const Home = () => {
     <section className={styles["home__container"]}>
       <div className={styles["home__content-image"]}>
         <Image
-          src={ImageProfile}
+          src={"/public/Home/IMG-20230131-WA0037.jpg"}
           alt="Profile Image"
           className={styles["home__image--portfolio"]}
+          width={200}
+          height={200}
         />
         <h1 className={styles["home__title--portfolio"]}>
           Hola soy <b>Daniel Mayo</b> desarrollador <b>Full-Stack</b>

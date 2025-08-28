@@ -2,13 +2,25 @@ import type { Config } from "tailwindcss";
 const { heroui } = require("@heroui/react");
 
 const config: Config = {
+
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    // "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    // "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    // "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+        './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+
     "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
-
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-sans)"],
+        mono: ["var(--font-mono)"],
+      },
+    },
+  },
+  darkMode: "class",
   plugins: [
     heroui({
       themes: {
@@ -20,10 +32,9 @@ const config: Config = {
               DEFAULT: "#4caf50",
             },
             secondary: "#ffff",
-            danger:"#f4693b"
+            danger: "#f4693b",
           },
           layout: {
-            
             fontSize: {
               tiny: "0.75rem", // text-tiny
               small: "0.875rem", // text-small

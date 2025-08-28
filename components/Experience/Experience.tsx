@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
-import { CardExperience } from "../Search/CardExperience/CardExperience";
-import { dataExperience } from "../Search/CardExperience/data";
+
 import styles from "./Experience.module.css";
+import { dataExperience } from "../Search/CardExperience/data";
+import { CardExperience } from "../Search/CardExperience/CardExperience";
 
 export const Experience = () => {
   return (

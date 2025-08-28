@@ -9,12 +9,16 @@
       "lint": "next lint"
    },
    "dependencies": {
-      "@heroui/react": "2.8.2",
-      "framer-motion": "^11.2.9",
+      "@heroui/button": "^2.2.24",
+      "@heroui/react": "^2.8.2",
+      "@heroui/system": "^2.4.20",
+      "@heroui/theme": "^2.4.20",
+      "@tailwindcss/postcss": "^4.1.12",
+      "framer-motion": "^12.23.12",
       "next": "^14.2.32",
       "portfolio": "file:",
-      "react": "^18",
-      "react-dom": "^18",
+      "react": "^18.3.1",
+      "react-dom": "^18.3.1",
       "resend": "^3.5.0",
       "swiper": "^11.1.4",
       "toastify-js": "^1.12.0"
@@ -26,8 +30,8 @@
       "@types/toastify-js": "^1.12.3",
       "eslint": "^8",
       "eslint-config-next": "14.2.3",
-      "postcss": "^8",
-      "tailwindcss": "^3.4.1",
+      "postcss": "^8.5.6",
+      "tailwindcss": "^4.1.12",
       "typescript": "^5"
    }
 }

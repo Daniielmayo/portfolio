@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "@heroui/react";
+import { Button } from "@heroui/button";
 import styles from "./Button.module.css";
 
 interface ButtonComponentProps {
@@ -20,7 +20,7 @@ export const ButtonComponent: React.FC<ButtonComponentProps> = ({
   const buttonClass = `${styles["button"]} ${className}`;
   return (
     <div className="flex gap-4 items-center">
-      <Button className={buttonClass} onClick={onClick}>
+      <Button color="primary">
         {icon && iconPosition === "left" && (
           <span className={styles["icon-left"]}>{icon}</span>
         )}

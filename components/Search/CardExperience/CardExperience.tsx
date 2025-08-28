@@ -9,6 +9,7 @@ import {
 } from "@heroui/react";
 import IconWorkAlt from "@/components/Icons/WorkIcon";
 
+
 interface Props {
   image?: string;
   rol?: string;
