@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import styles from "./Contact.module.css";
-import { Button, Input, Textarea } from "@nextui-org/react";
+import { Button, Input, Textarea } from "@heroui/react";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
 

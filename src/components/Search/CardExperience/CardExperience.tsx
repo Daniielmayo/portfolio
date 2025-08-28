@@ -6,7 +6,7 @@ import {
   CardFooter,
   Link,
   Image,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import IconWorkAlt from "@/components/Icons/WorkIcon";
 
 interface Props {
@@ -36,7 +36,7 @@ export const CardExperience: React.FC<Props> = ({
             width={40}
           />
         ) : (
-          <IconWorkAlt height={40} width={40} /> // Renderiza el ícono si no hay imagen
+          (<IconWorkAlt height={40} width={40} />) // Renderiza el ícono si no hay imagen
         )}
         <div className="flex flex-col">
           <p className="text-md">{name}</p>

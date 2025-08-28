@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import styles from "./Projects.module.css";
 import { CardProject } from "../Search/CardProject/CardProject";
 import { dataProjects } from "./dataProjects";
-import { Button } from "@nextui-org/react";
+import { Button } from "@heroui/react";
 
 export const Projects = () => {
   const [selectedTab, setSelectedTab] = useState("todos");

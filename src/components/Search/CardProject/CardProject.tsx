@@ -8,7 +8,7 @@ import {
   Image,
   Button,
   Chip,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import styles from "./CardProject.module.css";
 interface Props {
   image?: string;
