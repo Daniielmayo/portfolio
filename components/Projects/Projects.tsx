@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import styles from "./Projects.module.css";
 import { CardProject } from "../Search/CardProject/CardProject";
 import { dataProjects } from "./dataProjects";
-import { Button } from "@heroui/react";
+import { Button } from "@heroui/button";
+
 
 export const Projects = () => {
   const [selectedTab, setSelectedTab] = useState("todos");
@@ -26,7 +27,7 @@ export const Projects = () => {
       <h1 className={styles["project__title"]}>Proyectos</h1>
       <div className="flex flex-wrap justify-center gap-4 pb-0 pt-2 px-4">
         <Button
-          onClick={() => handleTabChange("todos")}
+          // onClick={() => handleTabChange("todos")}
           data-value="todos"
           variant={selectedTab === "todos" ? "solid" : "light"}
           className={`${styles.button} ${

@@ -1,25 +1,27 @@
 "use client";
-import Image from "next/image";
 import styles from "./Home.module.css";
 import IconWhatsappLine from "../Icons/WhatsAapIcon";
 import IconLinkedin from "../Icons/LinkedIndIcon";
 import { ButtonComponent } from "../Search/Button/Button";
 import IconIconDownload from "../Search/Icons/Home/Download";
 import Link from "next/link";
+import Image from "next/image";
+// import { Image } from "@heroui/image";
 
 export const Home = () => {
   return (
     <section className={styles["home__container"]}>
       <div className={styles["home__content-image"]}>
         <Image
-          src={"/public/Home/IMG-20230131-WA0037.jpg"}
+          src={"/Home/IMG-20230131-WA0037.jpg"}
           alt="Profile Image"
           className={styles["home__image--portfolio"]}
           width={200}
           height={200}
         />
         <h1 className={styles["home__title--portfolio"]}>
-          Hola soy <b>Daniel Mayo</b> desarrollador <b>Full-Stack</b>
+          Hola soy <b className={"text-success"}>Daniel Mayo</b> desarrollador{" "}
+          <b className={"text-success"}>Full-Stack</b>
         </h1>
       </div>
       <div className={styles["home__content--paragraph"]}>
@@ -54,7 +56,7 @@ export const Home = () => {
               target="_blank"
             >
               <ButtonComponent
-                className={styles["home__cv--button"]}
+                color="success"
                 icon={
                   <IconIconDownload className={styles["home__icon--button"]} />
                 }

@@ -5,11 +5,12 @@ import {
   Card,
   CardHeader,
   CardBody,
-  Image,
-  Button,
-  Chip,
-} from "@heroui/react";
+} from "@heroui/card";
 import styles from "./CardProject.module.css";
+import { Image } from "@heroui/image";
+import { Chip } from "@heroui/chip";
+import { Button } from "@heroui/button";
+
 interface Props {
   image?: string;
   title?: string;
@@ -65,13 +66,13 @@ export const CardProject: React.FC<Props> = ({
         {/* <small className="text-default-500">{tecnologyFront}</small> */}
       </CardHeader>
       <div className="flex flex-wrap mb-[2rem] pb- pt-2 px-4 max-w-[400px] gap-2">
-        <Chip variant="faded" className="text-[var(--color-white)]">
+        <Chip className="text-[var(--color-white)]">
           {tecnologyFront}
         </Chip>
         {technologiesOther?.map((technology) => (
           <Chip
             key={technology}
-            variant="faded"
+           
             className="text-[var(--color-white)]"
           >
             {technology}

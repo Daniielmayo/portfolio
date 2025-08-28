@@ -8,6 +8,14 @@ interface ButtonComponentProps {
   icon?: React.ReactNode;
   iconPosition?: "left" | "right";
   onClick?: () => void;
+  color?:
+    | "primary"
+    | "default"
+    | "secondary"
+    | "success"
+    | "warning"
+    | "danger"
+    | undefined;
 }
 
 export const ButtonComponent: React.FC<ButtonComponentProps> = ({
@@ -16,11 +24,12 @@ export const ButtonComponent: React.FC<ButtonComponentProps> = ({
   icon,
   iconPosition = "left",
   onClick,
+  color = "primary",
 }) => {
-  const buttonClass = `${styles["button"]} ${className}`;
+  // const buttonClass = `${styles["button"]} ${className}`;
   return (
     <div className="flex gap-4 items-center">
-      <Button color="primary">
+      <Button color={color}>
         {icon && iconPosition === "left" && (
           <span className={styles["icon-left"]}>{icon}</span>
         )}

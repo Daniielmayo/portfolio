@@ -7,10 +7,11 @@ import {
   NavbarMenu,
   NavbarContent,
   NavbarItem,
-  Link,
-} from "@heroui/react";
+} from "@heroui/navbar";
+
 import { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
+import { Link } from "@heroui/link";
 
 export default function NavbarTop() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -86,14 +87,14 @@ export default function NavbarTop() {
                 activeId === item.id ? styles.active : ""
               }`}
               href={`#${item.id}`}
-              onClick={(e: React.ChangeEvent<HTMLInputElement>) => {
-                e.preventDefault();
-                scrollToSection(item.id);
-                // Prevent activeId update for Skills click
-                if (item.id !== "skills") {
-                  setActiveId(item.id);
-                }
-              }}
+              // onClick={(e: React.ChangeEvent<HTMLInputElement>) => {
+              //   e.preventDefault();
+              //   scrollToSection(item.id);
+              //   // Prevent activeId update for Skills click
+              //   if (item.id !== "skills") {
+              //     setActiveId(item.id);
+              //   }
+              // }}
             >
               {item.label}
             </Link>
@@ -110,11 +111,11 @@ export default function NavbarTop() {
                 activeId === item.id ? styles.active : ""
               }`}
               href={`#${item.id}`}
-              size="lg"
-              onClick={(e: React.ChangeEvent<HTMLInputElement>) => {
-                e.preventDefault();
-                scrollToSection(item.id);
-              }}
+              // size="lg"
+              // onClick={(e: React.ChangeEvent<HTMLInputElement>) => {
+              //   e.preventDefault();
+              //   scrollToSection(item.id);
+              // }}
             >
               {item.label}
             </Link>

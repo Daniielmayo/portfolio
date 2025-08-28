@@ -1,12 +1,6 @@
-/* @tailwind utilities;
 @import "tailwindcss";
 
-/* Note: You may need to change the path to fit your project structure */
-/* @source '../../node_modules/@heroui/theme/dist*.{js,ts,jsx,tsx}'; */
-/* @custom-variant dark (&:is(.dark *)); */
-
-@import "tailwindcss";
-/* @import "tailwindcss"; */
+@config "../tailwind.config.js";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -53,26 +47,4 @@
   --borderRadius: 0.8rem;
   --transition: 500ms;
   --transform: scale(1.05);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: var(--color-primary);
-}
-html {
-  scroll-behavior: smooth;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
 }

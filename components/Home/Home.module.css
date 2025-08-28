@@ -31,9 +31,9 @@
   margin-bottom: 2rem;
 }
 
-.home__title--portfolio > b {
-  color: var(--color-green);
-}
+/* .home__title--portfolio > b {
+  color: red;
+} */
 
 .home__content--paragraph {
   width: 100%;

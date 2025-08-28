@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import styles from "./Contact.module.css";
-import { Button, Input, Textarea } from "@heroui/react";
+import { Button } from "@heroui/button";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
+import { Textarea, Input } from "@heroui/input";
 
 export const Contact = () => {
   const [name, setName] = useState("");
@@ -77,12 +77,14 @@ export const Contact = () => {
     }
   };
   return (
-    <section className={styles["container__contact"]}>
-      <h2 className={styles["contact__title"]}>Contacto</h2>
+    <section className="mt-16">
+      <h2 className="text-2xl font-bold text-center text-green-500 mb-2">
+        Contacto
+      </h2>
       <form
         action=""
         onSubmit={handleSubmit}
-        className={styles["container__form"]}
+        className="w-full flex justify-center flex-col gap-6 items-center"
       >
         <Input
           type="text"
@@ -114,14 +116,22 @@ export const Contact = () => {
             setDescription(e.target.value)
           }
         />
+        {/* <Textarea
+          className="max-w-xs"
+          label="Description"
+          placeholder="Enter your description"
+        /> */}
         {isSubmitting ? (
-          <Button className={styles["button_submit"]} isLoading>
+          <Button
+            className="w-[18.75rem] md:w-[25rem] transition-transform hover:scale-105"
+            isLoading
+          >
             Enviando
           </Button>
         ) : (
           <Button
-            color="danger"
-            className={styles["button_submit"]}
+            color="success"
+            className="w-[18.75rem] md:w-[25rem] transition-transform hover:scale-105"
             type="submit"
             disabled={isSubmitting}
           >

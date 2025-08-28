@@ -34,41 +34,28 @@ export const Skills = () => {
     { icon: <IconGit key="IconGit" />, text: "Git" },
     { icon: <IconGithub key="IconGithub" />, text: "GitHub" },
   ];
-
+  const repeatedIcons = [...icons, ...icons];
   return (
     <section id="skills" className={styles["skills__container"]}>
       <h1 className={styles["skills__title"]}>Skills</h1>
       <Swiper
-        centeredSlides={true}
-        autoplay={{
-          delay: 1000, // Tiempo de espera entre cada slide
-          disableOnInteraction: false,
-          // speed: 500, // Velocidad de la transición (en milisegundos)
-        }}
         loop={true}
-        speed={1000} // Ajusta la velocidad de la transición entre slides
-        modules={[Autoplay, Navigation]}
-        breakpoints={{
-          320: {
-            slidesPerView: 4,
-          },
-          // Cuando la ventana es >= 768px
-          768: {
-            slidesPerView: 6,
-          },
-          // Cuando la ventana es >= 1024px
-          1024: {
-            slidesPerView: 8,
-          },
-          // Cuando la ventana es >= 1440px
-          1440: {
-            slidesPerView: 10,
-          },
+        speed={6000} // más alto = más lento y fluido
+        autoplay={{
+          delay: 0, // sin pausa entre slides
+          disableOnInteraction: false,
         }}
+        allowTouchMove={false} // desactiva el arrastre manual
+        slidesPerView="auto" // para que se muestren como "carrousel"
+        spaceBetween={20}
+        modules={[Autoplay]}
         className={styles["skills__content--Icons"]}
       >
-        {icons.map(({ icon, text }, index) => (
-          <SwiperSlide key={index}>
+        {repeatedIcons.map(({ icon, text }, index) => (
+          <SwiperSlide
+            key={index}
+            style={{ width: "auto" }} // importante: hace que slides se ajusten a su contenido
+          >
             <div className={styles["skill__content"]}>
               {icon}
               <p className={styles["skills__name"]}>{text}</p>
