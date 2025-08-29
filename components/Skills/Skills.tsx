@@ -47,7 +47,7 @@ export const Skills = () => {
         }}
         allowTouchMove={false} // desactiva el arrastre manual
         slidesPerView="auto" // para que se muestren como "carrousel"
-        spaceBetween={20}
+        spaceBetween={70}
         modules={[Autoplay]}
         className={styles["skills__content--Icons"]}
       >

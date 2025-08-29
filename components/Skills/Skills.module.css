@@ -24,3 +24,7 @@
   text-align: center;
   font-size: var(--fontSize-paragraph_mobile);
 }
+.skills__content--Icons {
+  display: flex;
+  gap: 2rem;
+}
